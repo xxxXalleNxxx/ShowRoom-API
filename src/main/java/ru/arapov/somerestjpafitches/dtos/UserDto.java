@@ -11,16 +11,19 @@ public class UserDto {
 
     Long id;
     String username;
+    String email;
 
-    public UserDto(Long id, String username) {
+    public UserDto(Long id, String username, String email) {
         this.id = id;
         this.username = username;
+        this.email = email;
     }
 
     public static UserDto from(User user) {
         return new UserDto(
                 user.getId(),
-                user.getUsername()
+                user.getUsername(),
+                user.getEmail()
         );
     }
 }
