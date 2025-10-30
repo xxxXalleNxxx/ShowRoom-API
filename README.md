@@ -1,5 +1,5 @@
-<h1>P.S.<h1>
-1)Аутентификация
+# <h1>P.S.<h1>
+# 1)Аутентификация
   в AuthController нет эндпоинта для логина, потому что он в securityConfig через filterChain (.login). 
   Так же поэтому в тесте AuthControllerIT shouldLoginUser через MockMvc, а не через ResponseEntity.
   ПОТОМУ ЧТО в /api/v1/auth/login  Spring Security ВОЗВРАЩАЕТ application/octet-stream, а не application/json.
