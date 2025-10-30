@@ -8,7 +8,7 @@ import lombok.experimental.FieldDefaults;
 import java.time.LocalDateTime;
 
 @Entity
-@Data // в данном случае похуй
+@Data // в данном случае пох
 @FieldDefaults(level = AccessLevel.PRIVATE)
 @Table(name = "users_info")
 public class User {
