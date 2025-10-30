@@ -6,7 +6,7 @@ import lombok.Data;
 import lombok.experimental.FieldDefaults;
 import java.math.BigDecimal;
 
-// промежуточная сущность для отказа от many to many связи напрямую между корзиной и товарами (гибкость изменяемости параметров независимо друг от друга)
+// промежуточная сущность для отказа от many to many связи между корзиной и товарами
 
 @Entity
 @Data
